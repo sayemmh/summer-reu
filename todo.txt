@@ -1,0 +1,4 @@
+@TODO 6/16/17:
+1 ) Perona Malik Code
+2 ) Replicate results from Shake and Bake paper for the jittered images.
+3 ) Find out the different ways to display images. Colormap, image.

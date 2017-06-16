@@ -1,9 +1,6 @@
 % normally distributed horizontal jitter
 
-% I = imread('ngafghan.jpg');
-% I = I(:,:,1);
 function I = jitter(I, lambda)
-
 
 [r, c] = size(I);
 
@@ -21,7 +18,6 @@ for row = 1:r
   end
 end
 
-imshow(I)
-
+% imshow(I)
 
 end
