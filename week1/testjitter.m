@@ -1,40 +1,52 @@
 I = imread('../img/ngafghan.jpg');
 I = I(:,:,1);
-% I = double(I);
+I = imresize(I, 0.5)
+I = double(I);
 
-%I = 255 * ones(200, 200);
-%I(30:170, 75:125) = 0;
+%I = 255 * ones(50, 50);
+%I(10:40, 20:30) = 0;
 
-I_jitter = jitter(I, 10);
+I_jitter = jitter(I, 4);
 
-I_heat = heatequation(I_jitter, 30);
+I_heat = heatequation(I_jitter, 15);
 
 I_edges = getEdges(double(I))
 
 Ij_edges = getEdges(double(I_jitter))
 
-Ij_tvr = tvrFunction(double(I_jitter), 50)
+Ijh_edges = getEdges(double(I_heat))
+
+Ij_tvr = tvrFunction(double(I_jitter), 250)
 Ijtvr_edges = getEdges(Ij_tvr)
 
-subplot(2,4,1)
+subplot(4,2,1)
 dispImage(I)
-ntitle('I original')
+title('I')
 
-subplot(2,4,2)
+subplot(4,2,2)
 dispImage(I_jitter)
-ntitle('I_jitter')
+title('Ij (I jitter)')
 
-subplot(2,4,3)
+subplot(4,2,3)
 dispImage(I_heat)
+title('Ijh (Ij heat)')
 
-subplot(2,4,4)
-dispImage(I_edges)
-
-subplot(2,4,5)
-dispImage(Ij_edges)
-
-subplot(2,4,6)
+subplot(4,2,4)
 dispImage(Ij_tvr)
+title('Ij tvr')
 
-subplot(2,4,7)
+subplot(4,2,5)
+dispImage(I_edges)
+title('I edges')
+
+subplot(4,2,6)
+dispImage(Ij_edges)
+title('Ij edges')
+
+subplot(4,2,7)
+dispImage(Ijh_edges)
+title('Ijh edges')
+
+subplot(4,2,8)
 dispImage(Ijtvr_edges)
+title('Ijtvr edges')
