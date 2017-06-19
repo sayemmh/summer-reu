@@ -1,4 +1,0 @@
-i. 	different types of jitters
-ii. your jitter code
-iii. show examples of jitter code working, with different parameters
-iv. results of jitter then heatequation and resulting edge plots
