@@ -12,6 +12,6 @@ Paper - [Video dejittering by bake and shake](http://dl.acm.org/citation.cfm?id=
   - `test_dejitter.m` apply isotropic and anisotropic diffusion algorithms to jittered image
 3. compare the two types of diffusion algos and resulting edges
 <p align="center">
-<img src="https://raw.githubusercontent.com/sayemmh/summer-reu/master/week1/report/three.jpg">
+<img src="https://raw.githubusercontent.com/sayemmh/summer-reu/master/bake-and-shake/report/three.jpg">
 </p>
 ---
