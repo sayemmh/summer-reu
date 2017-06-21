@@ -16,8 +16,11 @@ Ij_edges = getEdges(double(I_jitter))
 
 Ijh_edges = getEdges(double(I_heat))
 
-Ij_tvr = tvrFunction(double(I_jitter), 250)
+Ij_tvr = totalvariationdenoising(double(I_jitter), 250)
 Ijtvr_edges = getEdges(Ij_tvr)
+
+u = jitter(I, 2);
+pm = peronamalik(u, 10);
 
 subplot(4,2,1)
 dispImage(I)
