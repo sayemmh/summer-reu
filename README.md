@@ -1,7 +1,6 @@
 # summer-reu
 ## stabilization of videos with atmospheric turbulence distortion
 ---
-### Week 1:
 Paper - [Video dejittering by bake and shake](http://dl.acm.org/citation.cfm?id=1709255)
 1. implement a uniformly distributed 1-dimensional horizontal jitter
   - `jitter.m` apply the jitter to an input image

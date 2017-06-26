@@ -18,9 +18,9 @@ for t = 1:iterations
 
         p = ((uxf.^2 + uyf.^2).^0.5);
         % p = ((uxb.^2 + uyb.^2).^0.5);
-        gu = 1 ./ (1 + p.^2 ./ a.^2);
+        %gu = 1 ./ (1 + p.^2 ./ a.^2);
 
-        %gu = 1 ./ ((1 + p.^2) ^0.5);
+        gu = 1 ./ ((1 + p.^2)^0.5);
 
         guxf = gu .* uxf;
         guyf = gu .* uyf;

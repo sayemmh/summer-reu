@@ -3,8 +3,8 @@ I = I(:,:,1);
 I = imresize(I, 0.5)
 I = double(I);
 
-%I = 255 * ones(50, 50);
-%I(10:40, 20:30) = 0;
+I = 255 * ones(50, 50);
+I(10:40, 20:30) = 0;
 
 I_jitter = jitter(I, 4);
 
@@ -21,6 +21,8 @@ Ijtvr_edges = getEdges(Ij_tvr)
 
 u = jitter(I, 2);
 pm = peronamalik(u, 10);
+
+pm = perona2(u, 10);
 
 subplot(4,2,1)
 dispImage(I)
