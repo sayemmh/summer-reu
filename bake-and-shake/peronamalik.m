@@ -1,7 +1,7 @@
 function u = peronamalik(u, iterations)
 
 
-a = 10;
+a = 25;
 u = double(u);
 
 dt = 0.1;

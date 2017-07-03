@@ -55,3 +55,7 @@ title('Ijh edges')
 subplot(4,2,8)
 dispImage(Ijtvr_edges)
 title('Ijtvr edges')
+
+% shake step
+% for each line get each line
+snp1 = sn - ep ./ edp

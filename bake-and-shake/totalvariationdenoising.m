@@ -1,9 +1,9 @@
 function B = totalvariationdenoising(in, runtime)
 
     h = 1;
-    dt = .05;
+    dt = .1;
     [r,c,l] = size(in);
-    lambda = 0.01;
+    lambda = 0.1;
     alpha = 1;
     B_original = in(:,:,1); % + 50*rand(r,c);
     B = B_original;
