@@ -1,0 +1,19 @@
+motivation / goal: atmospheric turbulence
+
+blurry, good cameras, oscillation, etc. prevents us from seeing the ideal images.
+
+previous literature
+
+what do we want to do? understand the underlying model of this turbulence.
+method. starting point is Bake and Shake paper. Why are we using bake and shake?
+jitter and how it might be related to turbulence if it's randomly distributed.
+explain the bake step - tvr, perona malik, heat equation, etc. show some effects
+of each. talk about numerical methods. reference image and some examples. then
+go into the shake step - explain the idea behind it, newton's method, secant
+method.
+
+new part - j(y) = acos(by + c)
+
+3d vectorial newton's method
+
+III. references

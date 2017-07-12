@@ -1,0 +1,31 @@
+\section{Oscillatory Perturbation in Image}
+(The previous section should mention that model for image jitters is acos(by+C). Dejittering requires assumed knowledge of clean image, such as constrains or a reference shape of local edge.)
+
+An image which contains at least one continuous edge with vertical length greater than wave length of jitters should be sufficient to determine parameters of the perturbation model if there exits one-to-one mapping projects the edge to vertical axis.
+
+
+\begin{itemize}
+\item Reference Shape: f(y)=x
+\item Observed Edge: f'(y)=x+acos(by+c)
+\item Apply cos-curve fitting to f'(y)-f(y)
+\end{itemize}
+(The list above in full sentences: If a reference shape is given as function f(y)=x, then the observed edge is f(y)=x+acos(by+c). Parameter (a,b,c) can be retrieved through cos-curve fitting. )
+
+
+If the image is known to have non-frustrated edges, then a low-pass filter can be applied to the edge image to find proper reference edge.(Need a bit time on this demo.)
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth]{c4.jpg}
+\caption{\label{fig:c4}The figure shows the original image, jittered image, baked image and edges in order.}
+\end{figure}
+
+
+\section{Oscillatory Perturbation in Image}
+(It should mention that model for image jitters is acos(by+ct)) With temporal information, if the clean image assumes static, the dynamic of perturbation is captured by the change of edges in time.
+
+\begin{itemize}
+\item Each point of edge acts as a standing wave in time
+\item a and c can be determined from one single point
+\item as a and c determined, b is determined
+\end{itemize}

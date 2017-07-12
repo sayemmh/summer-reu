@@ -7,7 +7,7 @@ function I = jitter(I, lambda)
 % lambda = 10; % max amount of horizontal jitter
 
 for row = 1:r
-  displacement = round((2*lambda) * rand(1) - lambda)
+  displacement = round((2*lambda) * rand(1) - lambda);
   if displacement > 0
     I(row, :) = [zeros(1, displacement), I(row, 1:c-displacement)];
   elseif displacement < 0
